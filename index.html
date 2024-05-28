@@ -160,7 +160,98 @@
       </div>
     </section>
 
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Bagaimana Cinta Kami Bersemi</span>
+            <h2>Cerita Kami</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, alias excepturi? Ipsum dolorem natus velit!</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image" style="background-image: url(img/school.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pertama Bertemu</h3>
+                    <span>3 Desember 2008</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt alias delectus aut obcaecati. Esse, sapiente!</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-inverted">
+                <div class="timeline-image" style="background-image: url(img/forest.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Mulai Serius</h3>
+                    <span>21 November 2009</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minus dolor, veniam soluta dolores aut laboriosam incidunt!</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="timeline-image" style="background-image: url(img/cullen-house.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Tunangan</h3>
+                    <span>30 Juni 2010</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aperiam repudiandae fugiat ipsum labore officia veniam dolorem, iusto ducimus.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Memori Kisah Kami</span>
+            <h2>Galeri Foto</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, optio.</p>
+          </div>
+        </div>
+
+        <div class="row row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+          <div class="col mt-3">
+            <a href="img/gallery/thumbnail/1a.png" data-toggle="lightbox" data-caption="Edward & Bella 1" data-gallery="twilightGallery"><img src="img/gallery/main/1.png" alt="Edward & Bella 1" class="img-fluid w-100 rounded" /></a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/thumbnail/2a.png" data-toggle="lightbox" data-caption="Edward & Bella 2" data-gallery="twilightGallery"><img src="img/gallery/main/2.png" alt="Edward & Bella 2" class="img-fluid w-100 rounded" /></a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/thumbnail/3a.png" data-toggle="lightbox" data-caption="Edward & Bella 3" data-gallery="twilightGallery"><img src="img/gallery/main/3.png" alt="Edward & Bella 3" class="img-fluid w-100 rounded" /></a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/thumbnail/4a.png" data-toggle="lightbox" data-caption="Edward & Bella 4" data-gallery="twilightGallery"><img src="img/gallery/main/4.png" alt="Edward & Bella 4" class="img-fluid w-100 rounded" /></a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/thumbnail/5a.png" data-toggle="lightbox" data-caption="Edward & Bella 5" data-gallery="twilightGallery"><img src="img/gallery/main/5.png" alt="Edward & Bella 5" class="img-fluid w-100 rounded" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- lightbox for bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 
     <!-- simplyCoundown -->
     <script>
@@ -176,6 +267,19 @@
           minutes: { singular: "menit", plural: "menit" },
           seconds: { singular: "detik", plural: "detik" },
         },
+      });
+    </script>
+
+    <script>
+      const stickyTop = document.querySelector(".sticky-top");
+      const offcanvas = document.querySelector(".offcanvas");
+
+      offcanvas.addEventListener("shown.bs.offcanvas", function () {
+        stickyTop.style.overflow = "visible";
+      });
+
+      offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stickyTop.style.overflow = "hidden";
       });
     </script>
   </body>
