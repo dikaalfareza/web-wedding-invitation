@@ -7,7 +7,7 @@
 body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
-  min-height: 5000px;
+  min-height: 6000px;
 }
 
 .hero::before {
@@ -91,7 +91,9 @@ body {
 .home h2,
 .info h2,
 .story h2,
-.gallery h2 {
+.gallery h2,
+.rsvp h2,
+.gifts h2 {
   color: var(--pink);
   font-size: 5rem;
   font-family: "Sacramento", cursive;
@@ -179,13 +181,16 @@ body {
 }
 
 .story,
-.gallery {
+.gallery,
+.rsvp,
+.gifts {
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
 
 .story span,
-.gallery span {
+.gallery span,
+.gifts span {
   text-transform: uppercase;
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
@@ -195,7 +200,9 @@ body {
 }
 
 .story p,
-.gallery p {
+.gallery p,
+.rsvp p,
+.gifts p {
   font-size: 1rem;
   font-weight: 300;
 }
@@ -310,6 +317,50 @@ body {
 
 .gallery {
   background-color: #f5f5f5;
+}
+
+.rsvp {
+  background-color: var(--bg);
+}
+
+.rsvp h2 {
+  font-size: 4.5rem;
+}
+
+.rsvp p,
+.rsvp form label {
+  color: white;
+}
+
+.rsvp button {
+  background-color: var(--pink);
+  color: white;
+  border: 1px solid var(--pink);
+}
+
+.rsvp button:hover,
+.rsvp button:active {
+  background-color: white !important;
+  color: var(--pink) !important;
+  border: 1px solid white !important;
+}
+
+footer {
+  padding: 3rem;
+  background-color: var(--pink);
+  color: white;
+}
+
+footer small a {
+  font-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+footer small.WPU,
+footer small.WPU a {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.8rem;
 }
 
 /* Media Query */
