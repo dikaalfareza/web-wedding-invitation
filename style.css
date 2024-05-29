@@ -363,6 +363,34 @@ footer small.WPU a {
   font-size: 0.8rem;
 }
 
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  mix-blend-mode: difference;
+  transform-origin: center;
+  animation: rotating 4.5s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Media Query */
 /* Extra Large */
 @media (max-width: 1200px) {
